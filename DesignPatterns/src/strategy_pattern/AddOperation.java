@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package designpatterns;
+package strategy_pattern;
 
 /**
  *
  * @author koushik
  */
-public class DesignPatterns {
+public class AddOperation implements Strategy{
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    @Override
+    public int execute(int num1, int num2) {
+        return num1+num2;
     }
     
 }
